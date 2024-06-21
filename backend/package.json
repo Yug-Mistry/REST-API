@@ -1,0 +1,12 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "rest-api using express, node and mongodb",
+  "main": "server.js",
+  "scripts": {
+    "test": "npm start",
+    "start": "node server.js"
+  },
+  "author": "yug-mistry",
+  "license": "ISC"
+}
