@@ -1,4 +1,4 @@
-const ErrorLog = require("../models/ErrorLogModel");
+const ErrorLog = require("../models/errorLog.model");
 
 // Function to log an error
 const logError = async (error, source, endpoint) => {

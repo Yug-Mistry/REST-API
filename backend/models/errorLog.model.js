@@ -2,6 +2,10 @@ const mongoose = require("mongoose");
 
 // Define the schema for the ErrorLog model
 const ErrorLogSchema = new mongoose.Schema({
+     _id: {
+          type: mongoose.Schema.Types.ObjectId,
+          auto: true,
+      },
      message: {
           type: String,
           required: true,
