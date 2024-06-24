@@ -33,3 +33,13 @@ exports.login = async (req, res) => {
         res.status(400).send(error);
     }
 }
+
+// Logout a user
+exports.logout = async (req, res) => {
+    try {
+        res.status(200).send("User logged out");
+    } catch (error) {
+        logError(error, "user.controller.js", "logoutUser");
+        res.status(400).send(error);
+    }
+};

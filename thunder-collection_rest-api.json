@@ -1,0 +1,200 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "rest-api",
+    "collectionId": "6e4f3186-75af-4671-b5fe-49ac959b9fad",
+    "dateExported": "2024-06-23T23:59:34.521Z",
+    "version": "1.2",
+    "folders": [
+        {
+            "_id": "d3240bfc-d72f-4aec-b9b4-c39ddca5acaa",
+            "name": "product",
+            "containerId": "",
+            "created": "2024-06-22T17:44:29.821Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "2d526f49-bd1b-43ac-9fa3-4eff1b0f5891",
+            "name": "user",
+            "containerId": "",
+            "created": "2024-06-23T08:00:03.803Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "c27ddd34-b53c-4194-9e9e-b8b425d3fd1a",
+            "name": "cart",
+            "containerId": "",
+            "created": "2024-06-23T11:37:53.852Z",
+            "sortNum": 30000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "1f0013bd-254f-458e-aa7f-b293abfa1ddd",
+            "colId": "6e4f3186-75af-4671-b5fe-49ac959b9fad",
+            "containerId": "d3240bfc-d72f-4aec-b9b4-c39ddca5acaa",
+            "name": "create new",
+            "url": "http://localhost:8989/products/add",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-06-22T17:44:47.044Z",
+            "modified": "2024-06-23T11:38:05.126Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"p1\",\n  \"description\": \"svn,dmnv,smmdnvc\",\n  \"price\": 12.3,\n  \"imageUrl\": \"https://randomuser.me/api/portraits/med/men/42.jpg\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "d7a47670-d6a2-4079-bab6-be8bdb87c3b9",
+            "colId": "6e4f3186-75af-4671-b5fe-49ac959b9fad",
+            "containerId": "d3240bfc-d72f-4aec-b9b4-c39ddca5acaa",
+            "name": "get all",
+            "url": "http://localhost:8989/products/",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-06-22T17:50:01.632Z",
+            "modified": "2024-06-23T11:35:01.680Z",
+            "headers": []
+        },
+        {
+            "_id": "f7c46962-eb86-4462-a056-6b1398b222e6",
+            "colId": "6e4f3186-75af-4671-b5fe-49ac959b9fad",
+            "containerId": "d3240bfc-d72f-4aec-b9b4-c39ddca5acaa",
+            "name": "get by id",
+            "url": "http://localhost:8989/products/6678084b17615fb8677f1079",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2024-06-22T17:50:29.218Z",
+            "modified": "2024-06-23T11:35:52.206Z",
+            "headers": []
+        },
+        {
+            "_id": "a0628ade-0cb5-453d-b5fe-a476c67135a5",
+            "colId": "6e4f3186-75af-4671-b5fe-49ac959b9fad",
+            "containerId": "2d526f49-bd1b-43ac-9fa3-4eff1b0f5891",
+            "name": "register user",
+            "url": "http://localhost:8989/users/register",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2024-06-23T08:00:18.152Z",
+            "modified": "2024-06-23T08:23:22.111Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\":\"abc\",\n  \"password\":\"abc\",\n  \"email\":\"abc@gmail.com\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "25361125-5a63-4391-9903-47641acc6c47",
+            "colId": "6e4f3186-75af-4671-b5fe-49ac959b9fad",
+            "containerId": "2d526f49-bd1b-43ac-9fa3-4eff1b0f5891",
+            "name": "login",
+            "url": "http://localhost:8989/users/login",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2024-06-23T09:06:34.168Z",
+            "modified": "2024-06-23T09:10:59.933Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\":\"abc@gmail.com\",\n  \"password\":\"abc\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "7ac0b2d6-7556-4cd2-b031-4b205d3f4506",
+            "colId": "6e4f3186-75af-4671-b5fe-49ac959b9fad",
+            "containerId": "c27ddd34-b53c-4194-9e9e-b8b425d3fd1a",
+            "name": "add to cart",
+            "url": "http://localhost:8989/cart/add",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2024-06-23T11:38:38.557Z",
+            "modified": "2024-06-23T12:25:55.432Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"userId\":\"6677dc2e82af0c32b9991aa9\",\n  \"productId\":\"6678084b17615fb8677f1079\",\n  \"quantity\":5\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "c81e6800-5bc2-4b64-886b-d398b26536ff",
+            "colId": "6e4f3186-75af-4671-b5fe-49ac959b9fad",
+            "containerId": "c27ddd34-b53c-4194-9e9e-b8b425d3fd1a",
+            "name": "remove from cart",
+            "url": "http://localhost:8989/cart/remove",
+            "method": "DELETE",
+            "sortNum": 70000,
+            "created": "2024-06-23T12:21:16.125Z",
+            "modified": "2024-06-23T23:15:43.392Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"userId\":\"6677dc2e82af0c32b9991aa9\",\n  \"productId\":\"6678084b17615fb8677f1079\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "4f297c7f-5a15-4e0c-aedb-5afaaffcc508",
+            "colId": "6e4f3186-75af-4671-b5fe-49ac959b9fad",
+            "containerId": "c27ddd34-b53c-4194-9e9e-b8b425d3fd1a",
+            "name": "clear cart",
+            "url": "http://localhost:8989/cart/clear/6677dc2e82af0c32b9991aa9",
+            "method": "DELETE",
+            "sortNum": 80000,
+            "created": "2024-06-23T12:26:09.563Z",
+            "modified": "2024-06-23T23:18:12.794Z",
+            "headers": []
+        },
+        {
+            "_id": "53178e2d-184a-41c5-881b-5816ddb4b68a",
+            "colId": "6e4f3186-75af-4671-b5fe-49ac959b9fad",
+            "containerId": "c27ddd34-b53c-4194-9e9e-b8b425d3fd1a",
+            "name": "get cart",
+            "url": "http://localhost:8989/cart/6677dc2e82af0c32b9991aa9",
+            "method": "GET",
+            "sortNum": 90000,
+            "created": "2024-06-23T12:27:40.263Z",
+            "modified": "2024-06-23T12:27:58.902Z",
+            "headers": []
+        },
+        {
+            "_id": "c0e48dd7-5039-40bb-9cfb-5bfd0dfc4d37",
+            "colId": "6e4f3186-75af-4671-b5fe-49ac959b9fad",
+            "containerId": "c27ddd34-b53c-4194-9e9e-b8b425d3fd1a",
+            "name": "update quantity in cart",
+            "url": "http://localhost:8989/cart/update",
+            "method": "PUT",
+            "sortNum": 100000,
+            "created": "2024-06-23T14:43:45.886Z",
+            "modified": "2024-06-23T14:45:17.579Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"userId\":\"6677dc2e82af0c32b9991aa9\",\n  \"productId\":\"6678084b17615fb8677f1079\",\n  \"quantity\":10\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "ed8a70c6-392d-45db-b841-7ed6224e26f5",
+            "colId": "6e4f3186-75af-4671-b5fe-49ac959b9fad",
+            "containerId": "2d526f49-bd1b-43ac-9fa3-4eff1b0f5891",
+            "name": "logout",
+            "url": "http://localhost:8989/users/logout",
+            "method": "POST",
+            "sortNum": 110000,
+            "created": "2024-06-23T23:27:46.454Z",
+            "modified": "2024-06-23T23:29:17.042Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2Njc3ZGMyZTgyYWYwYzMyYjk5OTFhYTkiLCJpYXQiOjE3MTkxODUzMzksImV4cCI6MTcxOTE4ODkzOX0.RnftgbVa9t5j_lJT72tFtpGC2o5CQT-fYiO3mqIWm70\"\n}",
+                "form": []
+            }
+        }
+    ],
+    "ref": "L4mgczO7M9hGgkxdoCzNedc5hFIZTy78tfVk5miBcqRLegFmywzOHIzFnikrPZcVcfzAxHvjzMjtSB3WTWjdyw"
+}
